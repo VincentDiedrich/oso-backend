@@ -1,15 +1,17 @@
 package org.oso.core.entities
 
 import com.fasterxml.jackson.annotation.JsonBackReference
-import org.hibernate.annotations.GenericGenerator
-import javax.persistence.*
+import javax.persistence.Column
+import javax.persistence.Entity
+import javax.persistence.ManyToMany
+import javax.persistence.Table
 import javax.validation.constraints.Size
 
 @Entity
 @Table(name = "hp")
 data class HelpProvider(
-    @Id @GeneratedValue(generator="system-uuid")
-    @GenericGenerator(name="system-uuid", strategy = "uuid")
+//    @Id @GeneratedValue(generator="system-uuid")
+//    @GenericGenerator(name="system-uuid", strategy = "uuid")
     @Column(nullable = false)
     @Size(min = 1)
     var id: String? = null,

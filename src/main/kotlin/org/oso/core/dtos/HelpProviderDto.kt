@@ -3,7 +3,7 @@ package org.oso.core.dtos
 import org.oso.core.entities.HelpProvider
 
 data class HelpProviderDto(
-    var id: String,
+    var id: String?,
     var name: String,
     var expoPushToken: String?
 )

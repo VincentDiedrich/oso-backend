@@ -19,4 +19,3 @@ data class Device(
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "device")
     val deviceCoordinates = mutableSetOf<DeviceCoordinate>()
 }
-

@@ -22,7 +22,7 @@ services:
       - backend
 
   keycloak:
-    image: jboss/keycloak:4.6.0.Final
+    image: jboss/keycloak:4.8.3.Final
     depends_on:
       - postgres
     networks:
